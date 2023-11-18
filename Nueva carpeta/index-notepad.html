@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta con Listas</title>
+	<link rel="stylesheet" type="text/css" href="archivo.css">
+	<head>
+	<body>
+	<h1>Encuesta para la ESS N°23</h1>
+	<p>
+	Hola, les quiero hacer una pequeña encuesta sobre cual de estos dos modelos de enseñanza que se aplican mucho en la escuela, les gusta
+	<h2>¿Que modelos hay?</h2>
+	<p>
+	En educación, existen diversas metodologías de enseñanza que se basan en diferentes teorías sobre el aprendizaje. Dos de las metodologías más comunes son el método cognitivista y el método tradicional.
+	<p>
+	El método cognitivista se centra en el aprendizaje activo del estudiante. El docente crea un ambiente de aprendizaje propicio para que los estudiantes construyan su propio conocimiento a través de la reflexión, la exploración y la resolución de problemas. Y tu nota depende una gran parte de tu participacion en clase.
+	<p>
+	El método tradicional se centra en la transmisión de información del docente al estudiante. El docente es la figura central del aprendizaje y el estudiante es un receptor pasivo de la información. Y tu nota depende una mayor parte de las actividades realizadas en clase.
+	<h2>
+	Completa: 
+	
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        li {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="radio" required] {
+            margin-right: 8px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0eec19;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>
+            <label>Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </li>
+
+        <div clase="radio">
+            <label>Turno:</label>
+            <label for="mañana">Mañana</label>
+              <input type="radio" name="curso" id="mañana">
+            <label for="tarde">Tarde</label>
+              <input type="radio" name="curso" id="tarde">
+            <label for="vespertino">Vespertino</label>
+              <input type="radio" name="curso" id="vespertino">
+        </div>
+
+        </li>
+        <form>
+        <div>
+            <label>Curso:</label>
+              <input type="number">
+        </div>
+        </form>
+
+        <li>
+            <label>¿Qué modelo de enseñanza te gusta más?</label>
+            <label for="si">Tradicional</label>
+            <input type="radio" id="si" name="grupo2" value="si" required>
+            <label for="no">Cognitivista</label>
+            <input type="radio" id="no" name="grupo2" value="no" required>
+        </li> 
+
+        <li>
+            <label>Para los que eligieron el modelo cognitivista:</label>
+            <label>¿Participas en clase?</label>
+
+
+
+            <label for="si">Participo</label>
+            <input type="radio" id="si" name="grupo3" value="si" required>
+            <label for="si">No participo</label>
+            <input type="radio" id="si" name ="grupo3" value="si" required>
+            <label for="si">Solo participo si me preguntan</label>
+            <input type="radio" id="si" name="grupo3" value="si" required>
+
+        </li>
+
+        <li>
+            <label>¿Por que te gusta ese modelo?¿O no te gusto ninguno?(opcional):</label>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+        </li>
+
+    </ul>
+
+    <input type="submit" value="Enviar Encuesta">
+
+</body>
+</html>
